@@ -1,4 +1,4 @@
-import 'package:farmers_social_media/src/views/ui/home_feed_view.dart';
+import 'package:farmers_social_media/src/views/ui/home_view.dart';
 import 'package:farmers_social_media/src/views/ui/register_view.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -17,11 +17,21 @@ class _HomeLoginState extends State<HomeLogin> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextFormField(),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Email',
+                border: OutlineInputBorder(),
+              ),
+            ),
             SizedBox(
               height: 20.0,
             ),
-            TextFormField(),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Password',
+                border: OutlineInputBorder(),
+              ),
+            ),
             SizedBox(
               height: 20.0,
             ),

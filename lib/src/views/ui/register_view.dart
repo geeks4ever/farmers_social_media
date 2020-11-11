@@ -14,11 +14,39 @@ class _UserRegisterState extends State<UserRegister> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextFormField(),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Email',
+                border: OutlineInputBorder(),
+              ),
+            ),
             SizedBox(
               height: 20.0,
             ),
-            TextFormField(),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Name',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Password',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'Confirm password',
+                border: OutlineInputBorder(),
+              ),
+            ),
             SizedBox(
               height: 20.0,
             ),
